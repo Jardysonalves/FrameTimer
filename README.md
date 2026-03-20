@@ -29,10 +29,3 @@ Otimizado para ser compilado via **w64devkit (GCC 15.2.0)**, garantindo um biná
 * [cite_start]`DllMain`: Ponto de entrada que executa todas as otimizações no momento da injeção (`DLL_PROCESS_ATTACH`). 
 
 ---
-
-### 📦 Como Compilar
-
-No seu terminal do **w64devkit**, execute o comando abaixo para gerar o binário otimizado:
-
-```bash
-g++ -O3 -shared -o framecap.dll framecap.cpp -lpsapi -luser32 -static
